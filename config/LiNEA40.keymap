@@ -57,7 +57,7 @@
         layers = <SCROLL>;
         input-processors =
             <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,
-            //スクロール方向を逆転,,,,,,,
+            //スクロール方向を逆転,,,,,,,,
             <&zip_xy_to_scroll_mapper>;
     };
 };
@@ -163,7 +163,7 @@
 &trans                    &kp LC(LS(TAB))           &kp LC(UP)                &kp LC(TAB)    &kp LC(J)                            &kp LA(LC(D))      &kp LA(LC(E))         &kp LA(LC(F))  &kp LA(LC(T))         &kp LA(LC(G))
 &trans                    &kp LC(LEFT)              &kp LS(LG(T))             &kp LC(RIGHT)  &kp SPACE                            &kp LC(K)          &kp LA(LC(NUMBER_4))  &kp F11        &kp LA(LC(NUMBER_0))  &kp LA(LC(ENTER))
 &trans                    &kp LG(LEFT)              &kp LC(DOWN)              &kp LG(RIGHT)  &kp LC(LG(SPACE))                    &kp LC(SEMICOLON)  &trans                &kp F19        &trans                &trans
-&kp LS(LC(LG(NUMBER_3)))  &kp LS(LG(LC(NUMBER_4)))  &kp LS(LG(LC(NUMBER_5)))  &trans         &trans             &trans    &trans  &trans                                   &trans         &kp LC(LG(NUMBER_3))  &kp LG(LC(NUMBER_4))
+&kp LS(LC(LG(NUMBER_3)))  &kp LS(LG(LC(NUMBER_4)))  &kp LS(LG(LC(NUMBER_5)))  &trans         &trans             &trans    &trans  &trans                                   &kp LC(LG(Q))  &kp LC(LG(NUMBER_3))  &kp LG(LC(NUMBER_4))
             >;
         };
 
@@ -180,10 +180,10 @@
 
         Win_Win {
             bindings = <
-&trans  &kp LC(LS(TAB))         &kp LG(TAB)    &kp LC(TAB)              &kp LG(SLASH)                     &trans  &trans  &trans  &trans  &trans
-&trans  &kp LC(LG(LEFT_ARROW))  &kp LC(LS(T))  &kp LC(LG(RIGHT_ARROW))  &kp SPACE                         &trans  &trans  &trans  &trans  &trans
-&trans  &kp LA(LEFT)            &trans         &kp LA(RIGHT)            &kp LG(PERIOD)                    &trans  &trans  &trans  &trans  &trans
-&trans  &trans                  &trans         &trans                   &trans          &trans    &trans  &trans          &trans  &trans  &trans
+&trans  &kp LC(LS(TAB))         &kp LG(TAB)    &kp LC(TAB)              &kp LG(SLASH)                     &trans  &trans  &trans     &trans  &kp F10
+&trans  &kp LC(LG(LEFT_ARROW))  &kp LC(LS(T))  &kp LC(LG(RIGHT_ARROW))  &kp SPACE                         &kp F7  &trans  &kp LG(D)  &trans  &trans
+&trans  &kp LA(LEFT)            &trans         &kp LA(RIGHT)            &kp LG(PERIOD)                    &kp F8  &trans  &trans     &trans  &trans
+&trans  &trans                  &trans         &trans                   &trans          &trans    &trans  &trans          &kp LG(L)  &trans  &trans
             >;
         };
 
