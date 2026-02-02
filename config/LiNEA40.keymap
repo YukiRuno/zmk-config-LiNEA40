@@ -57,7 +57,7 @@
         layers = <SCROLL>;
         input-processors =
             <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,
-            //スクロール方向を逆転,,,,,,,,,
+            //スクロール方向を逆転,,,,,,,,,,
             <&zip_xy_to_scroll_mapper>;
     };
 };
@@ -149,10 +149,10 @@
 
         Mac_Base {
             bindings = <
-&kp Q             &kp W             &kp E         &kp R   &kp T                                      &kp Y        &kp U  &kp I      &kp O           &kp P
-&kp A             &kp S             &kp D         &kp F   &kp G                                      &kp H        &kp J  &kp K      &kp L           &kp RIGHT_SHIFT
-&kp Z             &kp X             &kp C         &kp V   &kp B                                      &kp N        &kp M  &kp COMMA  &kp DOT         &kp SLASH
-&kp LEFT_COMMAND  &kp LEFT_CONTROL  &kp LEFT_ALT  &trans  &lt 8 LANG1  &lt 1 SPACE    &kp BACKSPACE  &lt 9 ENTER         &kp MINUS  &kp UNDERSCORE  &kp ESCAPE
+&kp Q             &kp W             &kp E               &kp R   &kp T                                      &kp Y        &kp U  &kp I      &kp O           &kp P
+&kp A             &kp S             &kp D               &kp F   &kp G                                      &kp H        &kp J  &kp K      &kp L           &kp RIGHT_SHIFT
+&kp Z             &kp X             &kp C               &kp V   &kp B                                      &kp N        &kp M  &kp COMMA  &kp DOT         &kp SLASH
+&kp LEFT_COMMAND  &kp LEFT_CONTROL  &mt LEFT_ALT LANG2  &trans  &lt 8 LANG1  &lt 1 SPACE    &kp BACKSPACE  &lt 9 ENTER         &kp MINUS  &kp UNDERSCORE  &kp ESCAPE
             >;
 
             sensor-bindings = <&mouse_scrl SCRL_DOWN SCRL_UP>;
@@ -165,6 +165,8 @@
 &trans                    &kp LG(LEFT)              &kp LC(DOWN)              &kp LG(RIGHT)  &kp LC(LG(SPACE))                    &kp LC(SEMICOLON)  &trans                &kp F19        &trans                &trans
 &kp LS(LC(LG(NUMBER_3)))  &kp LS(LG(LC(NUMBER_4)))  &kp LS(LG(LC(NUMBER_5)))  &trans         &trans             &trans    &trans  &trans                                   &kp LC(LG(Q))  &kp LC(LG(NUMBER_3))  &kp LG(LC(NUMBER_4))
             >;
+
+            sensor-bindings = <&mouse_scrl SCRL_DOWN SCRL_UP>;
         };
 
         Win_Base {
@@ -231,11 +233,13 @@
 
         layer_8 {
             bindings = <
-&kp SEMICOLON         &kp COLON         &kp LS(AT_SIGN)   &kp LS(NUMBER_1)  &kp LS(SLASH)                            &kp SLASH     &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp EQUAL
-&kp NON_US_BACKSLASH  &kp LS(NUMBER_7)  &kp LS(NUMBER_3)  &kp LEFT_BRACKET  &kp RIGHT_BRACKET                        &kp ASTERISK  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp MINUS
-&kp LS(NUMBER_4)      &kp LS(NUMBER_2)  &kp LS(NUMBER_5)  &kp LS(NUMBER_9)  &kp LS(NUMBER_0)                         &kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PLUS
-&mkp MB5              &trans            &trans            &trans            &trans             &trans    &kp DELETE  &trans                      &trans        &trans        &trans
+&kp SEMICOLON     &kp COLON         &kp LS(GRAVE)     &kp LS(NUMBER_1)  &kp LS(SLASH)                            &kp SLASH     &kp NUMBER_7  &kp NUMBER_8   &kp NUMBER_9      &kp EQUAL
+&kp BACKSLASH     &kp LS(NUMBER_7)  &kp LS(NUMBER_3)  &kp LEFT_BRACKET  &kp RIGHT_BRACKET                        &kp ASTERISK  &kp NUMBER_4  &kp NUMBER_5   &kp NUMBER_6      &kp MINUS
+&kp LS(NUMBER_4)  &kp LS(NUMBER_2)  &kp LS(NUMBER_5)  &kp LS(NUMBER_9)  &kp LS(NUMBER_0)                         &kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2   &kp NUMBER_3      &kp PLUS
+&mkp MB5          &trans            &trans            &trans            &trans             &trans    &kp DELETE  &trans                      &kp LESS_THAN  &kp GREATER_THAN  &trans
             >;
+
+            sensor-bindings = <&mouse_scrl SCRL_DOWN SCRL_UP>;
         };
 
         layer_9 {
@@ -245,6 +249,8 @@
 &trans          &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_RIGHT  &trans                    &trans  &kp LEFT  &kp DOWN  &kp RIGHT  &trans
 &kp END         &trans          &trans          &trans           &trans  &trans    &trans  &trans            &trans    &trans     &to 10
             >;
+
+            sensor-bindings = <&mouse_scrl SCRL_DOWN SCRL_UP>;
         };
 
         Adjust {
