@@ -57,7 +57,7 @@
         layers = <SCROLL>;
         input-processors =
             <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,
-            //スクロール方向を逆転,,,,,,,,,,
+            //スクロール方向を逆転,,,,,,,,,,,
             <&zip_xy_to_scroll_mapper>;
     };
 };
@@ -160,7 +160,7 @@
 
         Mac_Win {
             bindings = <
-&trans                    &kp LC(LS(TAB))           &kp LC(UP)                &kp LC(TAB)    &kp LC(J)                            &kp LA(LC(D))      &kp LA(LC(E))         &kp LA(LC(F))  &kp LA(LC(T))         &kp LA(LC(G))
+&kp LG(TAB)               &kp LC(LS(TAB))           &kp LC(UP)                &kp LC(TAB)    &kp LS(LG(TAB))                      &kp LA(LC(D))      &kp LA(LC(E))         &kp LA(LC(F))  &kp LA(LC(T))         &kp LA(LC(G))
 &trans                    &kp LC(LEFT)              &kp LS(LG(T))             &kp LC(RIGHT)  &kp SPACE                            &kp LC(K)          &kp LA(LC(NUMBER_4))  &kp F11        &kp LA(LC(NUMBER_0))  &kp LA(LC(ENTER))
 &trans                    &kp LG(LEFT)              &kp LC(DOWN)              &kp LG(RIGHT)  &kp LC(LG(SPACE))                    &kp LC(SEMICOLON)  &trans                &kp F19        &trans                &trans
 &kp LS(LC(LG(NUMBER_3)))  &kp LS(LG(LC(NUMBER_4)))  &kp LS(LG(LC(NUMBER_5)))  &trans         &trans             &trans    &trans  &trans                                   &kp LC(LG(Q))  &kp LC(LG(NUMBER_3))  &kp LG(LC(NUMBER_4))
@@ -231,18 +231,18 @@
             >;
         };
 
-        layer_8 {
+        SymNum {
             bindings = <
-&kp SEMICOLON     &kp COLON         &kp LS(GRAVE)     &kp LS(NUMBER_1)  &kp LS(SLASH)                            &kp SLASH     &kp NUMBER_7  &kp NUMBER_8   &kp NUMBER_9      &kp EQUAL
-&kp BACKSLASH     &kp LS(NUMBER_7)  &kp LS(NUMBER_3)  &kp LEFT_BRACKET  &kp RIGHT_BRACKET                        &kp ASTERISK  &kp NUMBER_4  &kp NUMBER_5   &kp NUMBER_6      &kp MINUS
-&kp LS(NUMBER_4)  &kp LS(NUMBER_2)  &kp LS(NUMBER_5)  &kp LS(NUMBER_9)  &kp LS(NUMBER_0)                         &kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2   &kp NUMBER_3      &kp PLUS
-&mkp MB5          &trans            &trans            &trans            &trans             &trans    &kp DELETE  &trans                      &kp LESS_THAN  &kp GREATER_THAN  &trans
+&kp SEMICOLON      &kp COLON         &kp LS(GRAVE)     &kp LS(NUMBER_1)  &kp LS(SLASH)                            &kp SLASH     &kp NUMBER_7  &kp NUMBER_8   &kp NUMBER_9      &kp EQUAL
+&kp BACKSLASH      &kp LS(NUMBER_7)  &kp LS(NUMBER_3)  &kp LEFT_BRACKET  &kp RIGHT_BRACKET                        &kp ASTERISK  &kp NUMBER_4  &kp NUMBER_5   &kp NUMBER_6      &kp MINUS
+&kp LS(NUMBER_4)   &kp LS(NUMBER_2)  &kp LS(NUMBER_5)  &kp LS(NUMBER_9)  &kp LS(NUMBER_0)                         &kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2   &kp NUMBER_3      &kp PLUS
+&kp DOUBLE_QUOTES  &kp GRAVE         &trans            &trans            &trans             &trans    &kp DELETE  &trans                      &kp LESS_THAN  &kp GREATER_THAN  &trans
             >;
 
             sensor-bindings = <&mouse_scrl SCRL_DOWN SCRL_UP>;
         };
 
-        layer_9 {
+        Func {
             bindings = <
 &kp HOME        &trans          &trans          &trans           &trans                    &trans  &trans    &trans    &trans     &kp PRINTSCREEN
 &kp LEFT_SHIFT  &trans          &msc SCRL_UP    &trans           &trans                    &trans  &mkp MB1  &kp UP    &mkp MB2   &trans
