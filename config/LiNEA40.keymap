@@ -57,7 +57,7 @@
         layers = <SCROLL>;
         input-processors =
             <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,
-            //スクロール方向を逆転,,,,,,,,,,,,
+            //スクロール方向を逆転,,,,,,,,,,,,,
             <&zip_xy_to_scroll_mapper>;
     };
 };
@@ -152,7 +152,7 @@
 &kp Q             &kp W             &kp E               &kp R   &kp T                                      &kp Y        &kp U  &kp I       &kp O     &kp P
 &kp A             &kp S             &kp D               &kp F   &kp G                                      &kp H        &kp J  &kp K       &kp L     &kp RIGHT_SHIFT
 &kp Z             &kp X             &kp C               &kp V   &kp B                                      &kp N        &kp M  &kp COMMA   &kp DOT   &kp SLASH
-&kp LEFT_COMMAND  &kp LEFT_CONTROL  &mt LEFT_ALT LANG2  &trans  &lt 7 LANG1  &lt 1 SPACE    &kp BACKSPACE  &lt 9 ENTER         &kp ESCAPE  &mkp MB2  &mkp MB1
+&kp LEFT_COMMAND  &kp LEFT_CONTROL  &mt LEFT_ALT LANG2  &trans  &lt 1 LANG1  &lt 7 SPACE    &kp BACKSPACE  &lt 9 ENTER         &kp ESCAPE  &mkp MB2  &mkp MB1
             >;
 
             sensor-bindings = <&mouse_scrl SCRL_DOWN SCRL_UP>;
@@ -171,10 +171,10 @@
 
         Win_Base {
             bindings = <
-&kp Q             &kp W         &kp E         &kp R   &kp T                                      &kp Y        &kp U  &kp I      &kp O           &kp P
-&kp A             &kp S         &kp D         &kp F   &kp G                                      &kp H        &kp J  &kp K      &kp L           &kp LEFT_SHIFT
-&kp Z             &kp X         &kp C         &kp V   &kp B                                      &kp N        &kp M  &kp COMMA  &kp PERIOD      &kp SLASH
-&kp LEFT_CONTROL  &kp LEFT_WIN  &kp LEFT_ALT  &trans  &lt 7 LANG5  &lt 3 SPACE    &kp BACKSPACE  &lt 9 ENTER         &kp MINUS  &kp UNDERSCORE  &kp ESCAPE
+&kp Q             &kp W         &kp E         &kp R   &kp T                                      &kp Y        &kp U  &kp I       &kp O       &kp P
+&kp A             &kp S         &kp D         &kp F   &kp G                                      &kp H        &kp J  &kp K       &kp L       &kp LEFT_SHIFT
+&kp Z             &kp X         &kp C         &kp V   &kp B                                      &kp N        &kp M  &kp COMMA   &kp PERIOD  &kp SLASH
+&kp LEFT_CONTROL  &kp LEFT_WIN  &kp LEFT_ALT  &trans  &lt 3 LANG5  &lt 7 SPACE    &kp BACKSPACE  &lt 9 ENTER         &kp ESCAPE  &mkp MB2    &mkp MB1
             >;
 
             sensor-bindings = <&mouse_scrl SCRL_DOWN SCRL_UP>;
