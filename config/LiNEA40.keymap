@@ -57,7 +57,7 @@
         layers = <SCROLL>;
         input-processors =
             <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,
-            //スクロール方向を逆転,,,,,,,,,,,,,,
+            //スクロール方向を逆転,,,,,,,,,,,,,,,
             <&zip_xy_to_scroll_mapper>;
     };
 };
@@ -142,6 +142,14 @@
 
             label = "BT_PAD";
         };
+
+        bt_macmini: bt_macmini {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&bt BT_SEL 4>, <&macro_tap_time 200>, <&to 0>;
+
+            label = "BT_MACMINI";
+        };
     };
 
     keymap {
@@ -174,7 +182,7 @@
 &kp Q             &kp W         &kp E         &kp R   &kp T                                      &kp Y        &kp U  &kp I       &kp O       &kp P
 &kp A             &kp S         &kp D         &kp F   &kp G                                      &kp H        &kp J  &kp K       &kp L       &kp LEFT_SHIFT
 &kp Z             &kp X         &kp C         &kp V   &kp B                                      &kp N        &kp M  &kp COMMA   &kp PERIOD  &kp SLASH
-&kp LEFT_CONTROL  &kp LEFT_WIN  &kp LEFT_ALT  &trans  &lt 3 LANG5  &lt 7 SPACE    &kp BACKSPACE  &lt 9 ENTER         &kp ESCAPE  &mkp MB2    &mkp MB1
+&kp LEFT_CONTROL  &kp LEFT_WIN  &kp LEFT_ALT  &trans  &lt 3 GRAVE  &lt 7 SPACE    &kp BACKSPACE  &lt 9 ENTER         &kp ESCAPE  &mkp MB2    &mkp MB1
             >;
 
             sensor-bindings = <&mouse_scrl SCRL_DOWN SCRL_UP>;
@@ -256,7 +264,7 @@
         Adjust {
             bindings = <
 &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                    &trans  &trans  &trans  &trans  &bt BT_CLR_ALL
-&bt_mac       &bt_win       &bt_pad       &trans        &trans                          &trans  &trans  &trans  &trans  &trans
+&bt_mac       &bt_win       &bt_pad       &trans        &bt_macmini                     &trans  &trans  &trans  &trans  &trans
 &trans        &trans        &trans        &trans        &trans                          &trans  &trans  &trans  &trans  &trans
 &trans        &trans        &trans        &trans        &trans        &trans    &trans  &trans          &trans  &trans  &trans
             >;
