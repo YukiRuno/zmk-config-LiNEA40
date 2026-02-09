@@ -57,7 +57,7 @@
         layers = <SCROLL>;
         input-processors =
             <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,
-            //スクロール方向を逆転,,,,,,,,,,,,,,,,,
+            //スクロール方向を逆転,,,,,,,,,,,,,,,,,,
             <&zip_xy_to_scroll_mapper>;
     };
 };
@@ -232,10 +232,10 @@
 
         SymNumC {
             bindings = <
-&kp NUMBER_1   &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4    &kp NUMBER_5                                   &kp NUMBER_6  &kp NUMBER_7   &kp NUMBER_8  &kp NUMBER_9   &kp NUMBER_0
-&kp LBKT       &kp RBKT      &trans        &kp UNDERSCORE  &kp PIPE                                       &kp PLUS      &kp MINUS      &kp ASTERISK  &kp SLASH      &trans
-&kp BACKSLASH  &kp TILDE     &kp GRAVE     &kp EQUAL       &kp LCTRL                                      &kp AT_SIGN   &kp SEMICOLON  &kp COLON     &kp LESS_THAN  &kp GREATER_THAN
-&trans         &trans        &trans        &trans          &trans        &trans    &mt LEFT_SHIFT DELETE  &trans                       &trans        &trans         &trans
+&kp NUMBER_1   &kp NUMBER_2  &kp NUMBER_3   &kp NUMBER_4    &kp NUMBER_5                                   &kp NUMBER_6  &kp NUMBER_7   &kp NUMBER_8  &kp NUMBER_9   &kp NUMBER_0
+&kp LBKT       &kp RBKT      &kp LESS_THAN  &kp UNDERSCORE  &kp PIPE                                       &kp PLUS      &kp MINUS      &kp ASTERISK  &kp SLASH      &trans
+&kp BACKSLASH  &kp TILDE     &kp GRAVE      &kp EQUAL       &kp LCTRL                                      &kp AT_SIGN   &kp SEMICOLON  &kp COLON     &kp LESS_THAN  &kp GREATER_THAN
+&trans         &trans        &trans         &trans          &trans        &trans    &mt LEFT_SHIFT DELETE  &trans                       &trans        &trans         &trans
             >;
         };
 
