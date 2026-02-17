@@ -57,7 +57,7 @@
         layers = <SCROLL>;
         input-processors =
             <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,
-            //スクロール方向を逆転,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+            //スクロール方向を逆転,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
             <&zip_xy_to_scroll_mapper>;
     };
 };
@@ -239,8 +239,8 @@
             bindings = <
 &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3           &kp NUMBER_4  &kp NUMBER_5                                   &kp NUMBER_6      &kp NUMBER_7   &kp NUMBER_8      &kp NUMBER_9  &kp NUMBER_0
 &kp RBKT      &kp BSLH      &kp LS(RIGHT_BRACKET)  &kp LS(BSLH)  &kp LS(INT3)                                   &kp KP_PLUS       &kp KP_MINUS   &kp KP_ASTERISK   &kp KP_SLASH  &kp AT
-&kp INT3      &kp PLUS      &kp LBRC               &kp EQUAL     &kp LS(INT1)                                   &kp LEFT_BRACKET  &kp SEMICOLON  &kp SINGLE_QUOTE  &kp LS(INT3)  &kp LS(INT1)
-&kp LA(INT3)  &trans        &trans                 &trans        &trans        &trans    &mt LEFT_SHIFT DELETE  &trans                           &trans            &trans        &trans
+&kp LA(INT3)  &kp PLUS      &kp LBRC               &kp EQUAL     &kp LS(INT1)                                   &kp LEFT_BRACKET  &kp SEMICOLON  &kp SINGLE_QUOTE  &kp LS(INT3)  &kp LS(INT1)
+&kp INT3      &trans        &trans                 &trans        &trans        &trans    &mt LEFT_SHIFT DELETE  &trans                           &trans            &trans        &trans
             >;
         };
 
@@ -257,10 +257,10 @@
 
         Func {
             bindings = <
-&kp HOME        &kp TAB         &trans          &kp LS(TAB)      &trans                                 &trans         &trans    &trans    &trans     &kp F10
-&kp LEFT_SHIFT  &kp LC(A)       &msc SCRL_UP    &kp LC(E)        &trans                                 &kp PAGE_UP    &mkp MB1  &kp UP    &mkp MB2   &trans
-&kp END         &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_RIGHT  &trans                                 &kp PAGE_DOWN  &kp LEFT  &kp DOWN  &kp RIGHT  &trans
-&trans          &trans          &trans          &trans           &kp LCTRL  &kp LEFT_COMMAND    &trans  &trans                   &trans    &trans     &to 10
+&kp HOME        &kp TAB         &trans          &kp LS(TAB)      &kp LEFT_BRACKET                                  &trans         &trans    &trans    &trans     &kp F10
+&kp LEFT_SHIFT  &kp LC(A)       &msc SCRL_UP    &kp LC(E)        &kp LS(LEFT_BRACKET)                              &kp PAGE_UP    &mkp MB1  &kp UP    &mkp MB2   &trans
+&kp END         &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_RIGHT  &trans                                            &kp PAGE_DOWN  &kp LEFT  &kp DOWN  &kp RIGHT  &trans
+&trans          &trans          &trans          &trans           &kp LCTRL             &kp LEFT_COMMAND    &trans  &trans                   &trans    &trans     &to 10
             >;
 
             sensor-bindings = <&inc_dec_kp LG(KP_PLUS) LG(KP_MINUS)>;
