@@ -16,7 +16,8 @@
 #define WIRELESS 6
 
 &mt {
-    tapping-term-ms = <220>;
+    tapping-term-ms = <200>;
+    require-prior-idle-ms = <125>;
 };
 
 //mouse cursol
