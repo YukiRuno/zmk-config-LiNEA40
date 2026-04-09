@@ -17,7 +17,8 @@
 
 &mt {
     tapping-term-ms = <200>;
-    require-prior-idle-ms = <125>;
+    flavor = "balanced";
+    quick-tap-ms = <0>;
 };
 
 //mouse cursol
@@ -62,7 +63,7 @@
         layers = <SCROLL>;
         input-processors =
             <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,
-            //スクロール方向を逆転,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+            //スクロール方向を逆転,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
             <&zip_xy_to_scroll_mapper>;
     };
 };
@@ -178,7 +179,7 @@
 
         Mac_Win {
             bindings = <
-&kp TAB          &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp LS(TAB)                            &trans    &mkp MB4        &mkp MB5        &mkp MB5              &kp F10
+&kp TAB          &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp LS(TAB)                            &trans    &mkp MB4        &mkp MB3        &mkp MB5              &kp F10
 &kp KP_SLASH     &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp LS(KP_MINUS)                       &kp HOME  &mkp MB1        &kp UP_ARROW    &mkp MB2              &kp F11
 &kp KP_ASTERISK  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp KP_PLUS                            &kp END   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW       &kp F12
 &kp DEL          &kp NUMBER_0  &kp PERIOD    &trans        &kp LEFT_COMMAND  &kp LCTRL    &trans  &trans                    &kp LC(LG(Q))   &kp LC(LG(NUMBER_3))  &kp LG(LC(NUMBER_4))
@@ -251,10 +252,10 @@
 
         SymNum {
             bindings = <
-&kp LS(NUMBER_1)          &kp AT_SIGN    &kp LS(NUMBER_3)       &kp LS(NUMBER_4)   &kp LS(NUMBER_5)                    &kp LS(NUMBER_6)  &kp LS(NUMBER_7)  &kp LS(NUMBER_8)  &kp LS(NUMBER_9)  &kp EQUAL
-&kp RIGHT_BRACKET         &kp BACKSLASH  &kp LS(RIGHT_BRACKET)  &kp LS(BACKSLASH)  &kp LS(INT3)                        &kp LEFT_BRACKET  &kp PLUS          &kp SINGLE_QUOTE  &trans            &trans
-&trans                    &trans         &trans                 &kp INT3           &kp LS(INT1)                        &kp SEMICOLON     &kp LEFT_BRACE    &kp LA(INT3)      &trans            &trans
-&kp LS(LC(LG(NUMBER_4)))  &trans         &kp LS(LG(NUMBER_5))   &trans             &trans            &trans    &trans  &trans                              &trans            &trans            &trans
+&kp LS(NUMBER_1)          &kp AT_SIGN        &kp LS(NUMBER_3)      &kp LS(NUMBER_4)  &kp LS(NUMBER_5)                    &kp LS(NUMBER_6)  &kp LS(NUMBER_7)  &kp LS(NUMBER_8)  &kp LS(NUMBER_9)  &kp PLUS
+&kp RIGHT_BRACKET         &kp BACKSLASH      &kp EQUAL             &kp LS(INT3)      &trans                              &kp LS(INT1)      &kp LEFT_BRACKET  &trans            &trans            &kp LEFT_BRACE
+&kp LS(RIGHT_BRACKET)     &kp LS(BACKSLASH)  &trans                &kp LS(INT1)      &kp INT3                            &kp LA(INT3)      &kp SINGLE_QUOTE  &trans            &trans            &kp SEMICOLON
+&kp LS(LC(LG(NUMBER_4)))  &trans             &kp LS(LG(NUMBER_5))  &trans            &trans            &trans    &trans  &trans                              &trans            &trans            &trans
             >;
 
             sensor-bindings = <&mouse_scrl SCRL_DOWN SCRL_UP>;
